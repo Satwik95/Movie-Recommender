@@ -21,3 +21,7 @@ This map-reduce job is responsible for deriving the recommendations based on the
 
 #  Deriving recommendations
 In the ﬁnal map-reduce job, we recommend a list of ‘n’ movies for each user. The inputs to this are the outputs of the ﬁrst and the fourth map-reduce jobs (in Section 5.1 and 5.3). The respective mappers simply construct hashmaps from the inputs. In the reducer, we ﬁrst make a list of the movies the user has rated (say Movies List). Next we ﬁlter out the movies which the user has rated 4.5 or above i.e. the movies the user really liked (say Referral List). We remove the ratings from Movies List and retain just the movie-IDs. Next, we make a list of all the recommended movies for the movies in Referral List (say Recommended List). Then we remove all the movies from Recommended List which are in Movies List since those movies have already been rated by the user. Next, we ﬁnd the frequency of each movie in Recommended List. We form our ﬁnal list of ‘n’ recommended movies in order of their frequency.
+
+# Authors:
+* **Satwik Mishra**
+* **Rishabh Agarwal**
