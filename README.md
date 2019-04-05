@@ -1,3 +1,6 @@
 # Movie-Recommender
 Movie Recommendation system based on collaborative filtering and sentiment analysis.
  The explosive increasing of the data on the Web has created and promoted the development of data mining are and is welcomed by researchers from both academia and industry. The sentiment computing of text like movie reviews is a signicant component of the social media. It has also attracted a lot of researches, which could support many real-world applications, such as public opinion monitoring and recommendation for Websites. This paper proposes a recommendation system with a combination of collaborative ﬁltering and sentiment analysis. The challenges of big data are solved using Hadoop through map reduce framework where the complete data is mapped and reduced to smaller sizable data to ease of handling.
+
+# Methodology :
+We use the MovieLens dataset from GroupLens consisting of 100,004 ratings of 9,125 movies by 671 users. A lexicon customized for movie reviews is used for sentiment analysis with each word in the lexicon assigned a value with the higher (positive) values indicating a more positive sentiment and the lower (negative) values indicating a negative sentiment. Up to 10 reviews for each movie was scraped from IMdB (Internet Movie Database). Due to the sheer size of the operations, we execute it on Hadoop using map-reduce. 
